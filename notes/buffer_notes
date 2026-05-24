@@ -1,0 +1,2 @@
+Rust buffer_overflow:
+i dette eksperiment fandt compileren ikke fejlen før run_time gav derfor panic.
