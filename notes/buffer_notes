@@ -1,2 +1,7 @@
 Rust buffer_overflow:
 i dette eksperiment fandt compileren ikke fejlen før run_time gav derfor panic.
+
+C buffer_overflow:
+i eksperimentet med buffer_overflow i C, compileren gav advarsel men kører aligevel.
+dog kørte programmet færdigt før den advarede mod stack smashing, det kan være at der blev overwritten data udenfor uden for buffer.
+et muligt problem kan være at det kan ske at programmet ikke crasher med det samme og dermed, laver et usikkert/ustabilt program. 
