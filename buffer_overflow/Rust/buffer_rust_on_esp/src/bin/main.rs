@@ -7,7 +7,6 @@
 )]
 #![deny(clippy::large_stack_frames)]
 
-use esp_hal::clock::CpuClock;
 use esp_hal::main;
 use esp_hal::time::{Duration, Instant};
 use esp_println::println;
@@ -39,7 +38,8 @@ fn main() -> ! {
         println!("Writing to index {}", i);
         buffer[i] = *b;
     }
-    
+
+    println!("this is after the overflow");
 
     loop {
         let delay_start = Instant::now();

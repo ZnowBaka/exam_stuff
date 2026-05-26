@@ -7,7 +7,6 @@
 )]
 #![deny(clippy::large_stack_frames)]
 
-use esp_hal::clock::CpuClock;
 use esp_hal::main;
 use esp_hal::time::{Duration, Instant};
 use esp_println::println;
@@ -37,6 +36,7 @@ fn main() -> ! {
     let reference = create_reference();
     println!("{}", reference);
 
+    println!("this is before restart");
     loop {
         let delay_start = Instant::now();
         while delay_start.elapsed() < Duration::from_millis(500) {}
