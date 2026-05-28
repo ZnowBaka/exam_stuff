@@ -16,5 +16,7 @@ int main(void)
  
     printf("After overflow:\n");
     printf("buffer contains: %s\n", buffer);
+    printf("buffer size after overflow = %d\n", sizeof(buffer));
+
     return 0;
 }
